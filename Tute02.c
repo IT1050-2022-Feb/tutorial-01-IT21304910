@@ -18,7 +18,35 @@ Amount = 30 x 50 + (50-30) x 40 = 2300*/
 
 #include <stdio.h>
 
-int main() {
+#include <stdio.h>
+
+int main() 
+{
+  float distance;
+  float amount;
+
+  printf("Input distance : ");
+  scanf("%f", &distance);
+
+  if(distance <= 20)
+  {
+    amount = distance*50;
+    printf("amount is %.2f", amount);
+    
+   }
+  else if(distance <= 50)
+  {
+
+    amount = distance*50+(50-distance)*40;
+    printf("amount is %.2f", amount);
+  }
+  else
+  {
+    printf("no mount");
+    
+  }
+  
+  
   
   return 0;
 }
